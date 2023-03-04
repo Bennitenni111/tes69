@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Responsive Contact Page: dark mode + form validation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="//db.onlinewebfonts.com/c/95cecf452d3208890088a5b4c19c7ecf?family=Helvetica+Neue+ME" rel="stylesheet" type="text/css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="contact-container">
+  <div class="left-col">
+    <img class="logo" src="https://i.imgur.com/uqT17nm.png"/>
+  </div>
+  <div class="right-col">
+    <div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+  </label>
+  <div class="description">Dark Mode</div>
+</div>
+    
+    <h1>GET YOUR OFFER DETAILS</h1>
+    <p>Welcome to our OnlyFans management model form! We understand that managing your OnlyFans account can be a challenging task, which is why we're here to help. Our management services are designed to make your life easier, allowing you to focus on creating the content that your fans love.</p>
+    
+    <form id="contact-form" method="post">
+      <label for="name">What best describes your current Onlyfans career stage?</label>
+  <input type="text" id="name" name="name" placeholder="Write Here" required>
+      <label for="email">Whats Your Residence Region</label>
+  <input type="text" id="name" name="name" placeholder="Write Here" required>
+      <label for="email">Whats Your Email</label>
+      <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+      <label for="message">Message</label>
+  <textarea rows="6" placeholder="Your Message" id="message" name="message" required>
+
+</textarea>
+      <!--<a href="javascript:void(0)">--><button type="submit" id="submit" name="submit">Send</button><!--</a>-->
+  
+</form>
+<div id="error"></div>
+<div id="success-msg"></div>
+  </div>
+</div>
+
+<!-- Image credit: Oliver Sjöström https://www.pexels.com/photo/body-of-water-near-green-mountain-931018/  -->
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
